@@ -1,2 +1,1 @@
-# Arrays
-Exercises on arrays
+This is a few exercises on arrays

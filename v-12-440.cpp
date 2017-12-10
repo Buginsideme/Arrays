@@ -23,6 +23,11 @@ int main(){
     cout<<"\nDammi il "<<i+1<<"° valore: ";
     cin>>ingresso[i];
   }
+//M:stampa vettore 
+  cout<<"\nEcco il vettore di ingresso: {";
+  for(int i=0; i<riempi; i++)
+     cout<<" "<<ingresso[i]<<";";
+  cout<<"}";
 //M:definizione estremi
   cout<<"\nDammi il primo estremo: ";
   cin>>a;
@@ -37,13 +42,14 @@ int main(){
     cin>>b;
   }
 //M:copia selettiva dei valori compresi tra gli estremi
-  cout<<"\nIl vettore uscita è {";
-  for(int j=0; j<riempi; j++){
-    if(ingresso[j]>=a && ingresso[j]<=b){
-      uscita[k++]=ingresso[j];
-      cout<<" "<<uscita[k]<<";";
+  for(int i=0; i<riempi; i++){
+    if(ingresso[i]>a && ingresso[i]<b){
+      uscita[k++]=ingresso[i];
     }
   }
+  cout<<"\nIl vettore uscita è {";
+  for(int i=0; i<k; i++)
+      cout<<" "<<uscita[i]<<";";
   cout<<"}";
   cout<<"\n\n";
 }

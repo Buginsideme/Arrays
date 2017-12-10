@@ -10,7 +10,7 @@ typedef int vettore[Max];
 
 int main(){
   vettore ingresso, uscita;
-  int riempi, i, j, k=0, a, b;      //a e b sono gli "estremi" tali che a<=b
+  int riempi, k=0, a, b;      //a e b sono gli "estremi" tali che a<=b
 //M:riempimento del vettore e verifica
   cout<<"\nInserisci il riempimento del vettore di ingresso (1-"<<Max<<"): ";
   cin>>riempi;
@@ -19,7 +19,7 @@ int main(){
     cin>>riempi;
   }
 //M:inserimento valori nel vettore ingresso
-  for(i=0; i<riempi; i++){
+  for(int i=0; i<riempi; i++){
     cout<<"\nDammi il "<<i+1<<"° valore: ";
     cin>>ingresso[i];
   }
@@ -29,7 +29,7 @@ int main(){
   cout<<"\nDammi il secondo estremo: ";
   cin>>b;
 //M:controllo estremi
-  if(a>=b){
+ while(a>=b){
     cout<<"\nEstremi non validi! reinseriscili (a<=b): ";
     cout<<"\nReinserisci il primo estremo: ";
     cin>>a;
@@ -38,11 +38,10 @@ int main(){
   }
 //M:copia selettiva dei valori compresi tra gli estremi
   cout<<"\nIl vettore uscita è {";
-  for(j=0; j<riempi; j++){
-    if(ingresso[j]>=a && ingresso[j]<b){
-      uscita[k]=ingresso[j];
+  for(int j=0; j<riempi; j++){
+    if(ingresso[j]>=a && ingresso[j]<=b){
+      uscita[k++]=ingresso[j];
       cout<<" "<<uscita[k]<<";";
-      k++;
     }
   }
   cout<<"}";

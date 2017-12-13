@@ -21,6 +21,11 @@ int main(){
     cout<<"\nDammi il "<<i+1<<"° valore: ";
     cin>>in[i];
   }
+//M:stampa vettore 
+  cout<<"\nEcco l'array: {";
+  for(int i=0; i<riempi; i++)              
+    cout<<" "<<in[i]<<";"; 
+  cout<<"}"<<"\n";       
 //M:copia selettiva dei valori
   for(int i=0; i<riempi; i++){
     if((in[i]%2)==0){      //A:la condizione per essere pari

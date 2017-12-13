@@ -24,12 +24,10 @@ int main(){
 //M:copia selettiva dei valori
   for(int i=0; i<riempi; i++){
     if((in[i]%2)==0){      //A:la condizione per essere pari
-      pari[j]=in[i];
-      j++;
+      pari[j++]=in[i];
     }
     else{
-      dispari[k]=in[i];
-      k++;
+      dispari[k++]=in[i];
     }
   }
 //M:cicli di stampa dei vettori

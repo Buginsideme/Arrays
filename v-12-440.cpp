@@ -47,6 +47,7 @@ int main(){
       uscita[k++]=ingresso[i];
     }
   }
+  //M:stampa nuovo vettore
   cout<<"\nIl vettore uscita è {";
   for(int i=0; i<k; i++)
       cout<<" "<<uscita[i]<<";";

@@ -1,4 +1,4 @@
-//SORRY I'LL TRASlATE IT LATER
+//SORRY I'LL TRANSlATE IT LATER
 /*Scrivere un programma che, inseriti 20 caratteri alfabetici da tastiera,
 li stamba in ordine alfabetico.
 ANALISI:

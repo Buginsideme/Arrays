@@ -1,5 +1,5 @@
 //SORRY I'LL TRANSlATE IT LATER
-/*Scrivere un programma che, inseriti 20 caratteri alfabetici da tastiera,
+/*Scrivere un programma che, inseriti i caratteri alfabetici da tastiera,
 li stamba in ordine alfabetico.
 ANALISI:
 Il programma innanzitutto leggerà i 20 caratteri da tastiera e li porrà in un array.
